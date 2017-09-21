@@ -60,4 +60,11 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public Fraction inverse() {
+        int aux = this.denominator;
+        this.denominator = this.numerator;
+        this.numerator = aux;
+        return this;
+    }
+    
 }
