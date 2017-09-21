@@ -44,6 +44,12 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+    
+    @Test
+    public void testMultiplyPoint() {
+        pt= new Point(2,5);
+        assertEquals(10, pt.multiplyPonit());
+    }
 
     @Test
     public void testToString() {
