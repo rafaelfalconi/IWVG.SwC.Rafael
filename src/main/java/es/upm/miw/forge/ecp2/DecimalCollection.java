@@ -30,6 +30,18 @@ public class DecimalCollection {
         }
         return sum;
     }
+    
+    public double resta() {
+        assert collection != null;
+        if (this.collection.isEmpty()) {
+            throw new ArithmeticException("Empty collection");
+        }
+        double resta = 0;
+        for (double item : this.collection) {
+            resta -= item;
+        }
+        return resta;
+    }
 
     public double higher() {
         assert collection != null;
