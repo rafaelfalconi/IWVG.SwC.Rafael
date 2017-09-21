@@ -33,6 +33,10 @@ public class User {
     public String fullName() {
         return this.name + " " + this.familyName;
     }
+    
+    public String reverseFullName() {
+        return this.familyName + " " + this.name;
+    }
 
     public String initials() {
         return this.name.substring(0, 1) + ".";

@@ -21,6 +21,12 @@ public class UserTest {
     }
 
     @Test
+    public void testReverseFullName() {
+        myUser = new User (1, "Juan", "Roy");
+        assertEquals("Roy Juan",myUser.reverseFullName());
+    }
+    
+    @Test
     public void testInitials() {
         assertEquals("R.", myUser.initials());
 
