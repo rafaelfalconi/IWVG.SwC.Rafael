@@ -36,6 +36,10 @@ public class Point {
         this.x -= origin.getX();
         this.y -= origin.getY();
     }
+    
+    public int multiplyPonit() {
+        return this.x * this.y;
+    }
 
     @Override
     public String toString() {
