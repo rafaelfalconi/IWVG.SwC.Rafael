@@ -17,5 +17,12 @@ public class FractionTest {
     public void testDecimal() {
         assertEquals(2, this.fraction.decimal(), 0.1);
     }
+    
+    @Test
+    public void testInverse() {
+        Fraction f = fraction.inverse();
+        assertEquals(3, f.getNumerator());
+        assertEquals(6, f.getDenominator());
+    }
 
 }
