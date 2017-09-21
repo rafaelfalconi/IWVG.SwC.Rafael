@@ -68,5 +68,19 @@ public class DecimalCollection {
         }
         return multiplicacion;
     }
+    
+    public double lesser() {
+        assert collection != null;
+        if (this.collection.isEmpty()) {
+            throw new ArithmeticException("Empty collection");
+        }
+        double lesser = Double.POSITIVE_INFINITY;
+        for (double item : this.collection) {
+            if (item < lesser) {
+                lesser = item;
+            }
+        }
+        return lesser;
+    }
 
 }
