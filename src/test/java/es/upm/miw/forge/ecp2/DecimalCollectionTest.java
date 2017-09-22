@@ -37,12 +37,24 @@ public class DecimalCollectionTest {
 	public void testSum() {
 		assertEquals(6.0, this.decimalCollection.sum(), 10e-5);
 	}
+		
 
 	@Test
 	public void testSumArithmeticExceptionIfEmpty() {
 		exception.expect(ArithmeticException.class);
 		new DecimalCollection().sum();
 	}
+	
+	@Test
+    public void testResta() {
+        assertEquals(-6.0, this.decimalCollection.resta(), 10e-5);
+    }
+	
+	@Test
+    public void testRestaArithmeticExceptionIfEmpty() {
+        exception.expect(ArithmeticException.class);
+        new DecimalCollection().resta();
+    }
 
 	@Test
 	public void testHigher() {
@@ -54,5 +66,21 @@ public class DecimalCollectionTest {
 		exception.expect(ArithmeticException.class);
 		new DecimalCollection().higher();
 	}
+	   @Test
+	    public void testmultiply() {
+	        assertEquals(-12.0, this.decimalCollection.multiply(), 10e-5);
+	    }
+	
+
+	 @Test
+	 public void testLesser() {
+	     assertEquals(-1.0, this.decimalCollection.lesser(), 10e-5);
+	 }
+
+	 @Test
+	 public void testLesserArithmeticExceptionIfEmpty() {
+	     exception.expect(ArithmeticException.class);
+	     new DecimalCollection().lesser();
+	 }
 
 }
